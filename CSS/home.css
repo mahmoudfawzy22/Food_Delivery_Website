@@ -142,6 +142,16 @@ header {
   height: 59px;
 }
 
+.icon p{
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1;
+  text-align: center;
+  color: #0A2F35;
+
+}
 .deal-with-moto {
   width: 568px;
   height: 232px;
@@ -221,6 +231,15 @@ header {
   width: 214px;
   margin-top: 200px;
   position: relative;
+}
+.check-in-box{
+  position: relative;
+}
+
+.check-in-box img{
+    position: absolute;
+    top: 91px;
+    left: 80px;
 }
 
 .question-content .icon .number {
