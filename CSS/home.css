@@ -113,7 +113,7 @@ header {
   height: 232px;
 }
 
-.order-content .icon-container .icon {
+.icon {
   width: 168px;
   height: 232px;
   border-radius: 28px;
@@ -125,7 +125,7 @@ header {
   margin: 10px;
 }
 
-.order-content .icon-container .icon i {
+.icon i {
   width: 108px;
   height: 108px;
   background-color: #ffffff;
@@ -133,7 +133,7 @@ header {
   position: relative;
 }
 
-.order-content .icon-container .icon i img {
+.icon i img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,10 +145,9 @@ header {
 .deal-with-moto {
   width: 568px;
   height: 232px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 28px;
   position: relative;
-
 }
 
 .deal-with-moto p {
@@ -160,44 +159,179 @@ header {
   letter-spacing: -1px;
 }
 
-.deal-with-moto img{
-    position: absolute;
-    right: 30px;
-    bottom: 0;
-    width: 148.06581115722656;
-    height: 101.63877868652344;
+.deal-with-moto img {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  width: 148.06581115722656;
+  height: 101.63877868652344;
 }
 
-.deal-with-moto p span:nth-of-type(1){
-    color: var(--primary-color);
+.deal-with-moto p span:nth-of-type(1) {
+  color: var(--primary-color);
 }
 
-.deal-with-moto p span:nth-of-type(2){
-    color: #009B00;
+.deal-with-moto p span:nth-of-type(2) {
+  color: #009b00;
 }
 
-.icon-container:nth-of-type(1){
-    margin-left: 100px;
+.icon-container:nth-of-type(1) {
+  margin-left: 100px;
 }
 
-.deal-with{
-    width: 545px;
-    height: 186.4166717529297px;
-
+.deal-with {
+  width: 545px;
+  height: 186.4166717529297px;
 }
 
-.deal-with p{
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 34px;
-    letter-spacing: 0;
+.deal-with p {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  letter-spacing: 0;
 }
 
-.deal-with img{
-    width: 61.00000000000094;
-    height: 50.416667938233196;
+.deal-with img {
+  width: 61.00000000000094;
+  height: 50.416667938233196;
 }
 
-.order-content:nth-of-type(2) .icon-container{
-    margin-left: 40px;
+.order-content:nth-of-type(2) .icon-container {
+  margin-left: 40px;
+}
+
+.question {
+  width: 1231px;
+  height: 408px;
+  position: relative;
+}
+.question h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 46px;
+  letter-spacing: 0.5;
+  color: #0a2f35;
+}
+.question-content .icon {
+  height: 238px;
+  width: 214px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.question-content .icon .number {
+  position: absolute;
+  top: -100px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 43.83px;
+  line-height: 100%;
+  letter-spacing: -1;
+  text-align: center;
+  color: #f7a325;
+}
+
+.question-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.client-feed-back {
+  width: 787px;
+  height: 540px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.client-feed-back h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  color: #111111;
+}
+
+.client-feed-back p#small {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.client-feed-back i img {
+  width: 60px;
+  height: 56.67938995361328px;
+  margin: 20px 0;
+}
+
+.client-feed-back p#large {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.client-feed-back .name h4 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -1;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  color: #111111;
+}
+
+.client-feed-back .name p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -1%;
+  text-align: center;
+  margin: 5px 0;
+  color: #616161;
+}
+
+.icon-row{
+  width: 36px;
+  height: 37.09923553466797px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.icon-row img {
+  width: 7.999999971600238px;
+  height: 16.488550127623366px;
+  border-width: 2px;
+}
+
+.right{
+  right: -100px;
+  top: 63%;
+}
+
+.left{
+  left: -100px;
+  top: 63%;
 }
