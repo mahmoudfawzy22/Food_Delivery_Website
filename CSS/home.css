@@ -1,6 +1,7 @@
 :root {
   --primary-color: #f7a325;
   --secondry-color: #0a2f35;
+  --border-form-color: #916bbf;
 }
 
 header {
@@ -142,15 +143,14 @@ header {
   height: 59px;
 }
 
-.icon p{
+.icon p {
   font-family: Inter;
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: -1;
   text-align: center;
-  color: #0A2F35;
-
+  color: #0a2f35;
 }
 .deal-with-moto {
   width: 568px;
@@ -232,14 +232,14 @@ header {
   margin-top: 200px;
   position: relative;
 }
-.check-in-box{
+.check-in-box {
   position: relative;
 }
 
-.check-in-box img{
-    position: absolute;
-    top: 91px;
-    left: 80px;
+.check-in-box img {
+  position: absolute;
+  top: 91px;
+  left: 80px;
 }
 
 .question-content .icon .number {
@@ -328,7 +328,7 @@ header {
   color: #616161;
 }
 
-.icon-row{
+.icon-row {
   width: 36px;
   height: 37.09923553466797px;
   border-radius: 50%;
@@ -345,12 +345,122 @@ header {
   border-width: 2px;
 }
 
-.right{
+.right {
   right: -100px;
   top: 63%;
 }
 
-.left{
+.left {
   left: -100px;
   top: 63%;
+}
+
+.contactUs {
+  margin: 150px 0;
+}
+
+.contactUs h2 {
+  text-align: center;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 58px;
+  letter-spacing: -1;
+  text-transform: capitalize;
+  color: #111111;
+  margin-bottom: 100px;
+}
+
+.contactUs h2 span {
+  color: var(--primary-color);
+}
+
+.contactUs-form {
+  width: 1237px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contactUs-form input {
+  position: relative;
+}
+.contactUs-form input:nth-of-type(1),
+.contactUs input:nth-of-type(2) {
+  width: 591px;
+  height: 71px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 10px;
+  margin-bottom: 45px;
+}
+
+.contactUs-form input:nth-of-type(1) {
+  margin-right: auto;
+}
+
+.contactUs input:nth-of-type(3) {
+  width: 100%;
+  height: 71px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 10px;
+  margin-bottom: 45px;
+}
+
+.contactUs input:last-of-type {
+  width: 100%;
+  height: 422px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 10px;
+}
+
+.contactUs .contactUs-form input::placeholder {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 24.41px;
+  letter-spacing: 0;
+  color: #1f1f1f;
+  position: absolute;
+  top: 0;
+  padding: 20px 30px;
+}
+
+.contactUs .contactUs-form input:focus {
+  outline: none;
+}
+
+footer {
+  background-color: var(--secondry-color);
+}
+
+footer .container {
+  height: 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 15.54px;
+  line-height: 24.41px;
+  letter-spacing: 0;
+  color: #b5b2b2;
+  margin-left: -30px;
+}
+
+footer .footer-links ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 386px;
+  margin-right: -125px;
+}
+
+footer .footer-links ul li a{
+    font-weight: 400;
+    font-size: 15.54px;
+    line-height: 24.41px;
+    letter-spacing: 0;
+    color: #b5b2b2;
 }
