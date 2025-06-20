@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  border-top-right-radius: 10px;
+  border-top-right-radius: 73px;
 }
 .background-content .img {
   width: 100%;
