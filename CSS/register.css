@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+  --primary-color: #f7a325;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.background-content {
+  width: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-top-right-radius: 73px;
+}
+.background-content .img {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.background-content img {
+  width: 418px;
+  height: 321px;
+}
+
+.background-content .box-content {
+  padding: 150px 100px;
+  width: 100%;
+  height: 71px;
+}
+
+.background-content .box-content h1,
+.background-content .box-content p {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+.background-content::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 59.22px;
+  height: 1002.37px;
+  background: linear-gradient(214deg, #391268 0%, #391268 100%);
+  transform: translate(-50%, -50%) rotate(319deg);
+  filter: blur(113px);
+  z-index: 100;
+}
+
+.background-content::after {
+  content: '';
+  position: absolute;
+  top: 77%;
+  left: 12%;
+  width: 59.22px;
+  height: 1002.37px;
+  background: linear-gradient(214deg, #391268 0%, #391268 100%);
+  transform: translate(-50%, -50%) rotate(141deg);
+  filter: blur(113px);
+  z-index: 100;
+}
+
+.form-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-box h1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin: 30px;
+}
+
+.form-box .input-box {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-box .input-box label {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #000000;
+  margin: 20px 0;
+}
+
+.form-box .input-box input {
+  width: 100%;
+  height: 71px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.form-box .input-box input:focus {
+  border-color: #391268;
+}
+
+.form-box .input-box input:hover {
+  border-color: #391268;
+}
+
+.form-box .input-box input:focus::placeholder {
+  color: transparent;
+}
+
+.login-btn {
+  width: 75%;
+  height: 71px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.togglePassword {
+  position: absolute;
+  top: 72%;
+  right: 6%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  font-size: 20px;
+}
