@@ -111,7 +111,7 @@ header .links ul li a {
 
 .container-2 {
   width: 100%;
-  max-width: 1601px;
+  min-width: 1601px;
   display: flex;
   flex-direction: column;
   align-items: center;
