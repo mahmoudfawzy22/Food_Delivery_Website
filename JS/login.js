@@ -16,7 +16,7 @@ loginBtn.addEventListener('click', (e) => {
     if (savedUser.password === passwordValue) {
       alert('Login successful, Welcome ' + savedUser.fullName);
       localStorage.setItem("loggedInUser", JSON.stringify(savedUser));
-      window.location.href = 'home.html';
+      window.location.href = '../HTML/home.html';
     } else {
       alert('Incorrect password');
     }

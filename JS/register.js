@@ -22,7 +22,7 @@ registerBtn.addEventListener('click', (e) => {
     };
     window.localStorage.setItem(emailValue, JSON.stringify(user));
     alert('Registration successful! You can now log in.');
-    window.location.href = 'login.html';
+    window.location.href = '../HTML/login.html';
   }
 });
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Your own CSS file -->
+    <link rel="stylesheet" href="../CSS/admin.css" />
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Correct Font Awesome CSS with valid integrity -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <section class="head">
+      <h1>Dianne Russell</h1>
+    </section>
+    <!-- Navigation Bar -->
+    <div class="content">
+      <section class="nav-bar">
+        <ul>
+          <li>
+            <i class="fa-solid fa-truck-fast"></i>
+            <a>Shipping</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a>Message</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user-lock"></i>
+            <a>Shipping Agent</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user-lock"></i>
+            <a>Admins</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user-lock"></i>
+            <a>Users</a>
+          </li>
+        </ul>
+        <div class="logout">
+          <ul>
+            <li>
+              <i class="fa-solid fa-arrow-right-from-bracket white"></i>
+              <a class="white" id="logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Main Content -->
+      <div class="container">
+        <div class="head">
+          <h1>Dianne Russell</h1>
+        </div>
+        <div class="table-content">
+          <div class="table-head">
+            <h1>Admin</h1>
+            <div class="input-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input id="search" type="text" placeholder="Search Organizations here" />
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>email</th>
+                <th>action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="Id">1</td>
+                <td class="name">mahmoud</td>
+                <td class="email">mahmoud@gmail.com</td>
+                <td class="remove"><i class="fa-solid fa-trash"></i></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table-footer">
+            <p>Rows per page: <span id="number-of-rows">10</span></p>
+            <span></span>
+            <p>1-10 of 276</p>
+            <div class="lt-gt">
+              <span>&lt;</span>
+              <span>&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/admin.js"></script>
+  </body>
+</html>
